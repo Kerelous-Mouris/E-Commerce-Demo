@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.example.e_commerce_demo.fragments.DataFragment"
+        android:label="fragment_data"
+        tools:layout="@layout/fragment_data">
+        <action
+            android:id="@+id/action_dataFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+        <action
+            android:id="@+id/action_dataFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+        <action
+            android:id="@+id/action_dataFragment_to_itemFragment"
+            app:destination="@id/itemFragment" />
+        <action
+            android:id="@+id/action_dataFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.example.e_commerce_demo.fragments.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories">
+        <action
+            android:id="@+id/action_categoriesFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+        <action
+            android:id="@+id/action_categoriesFragment_to_dataFragment"
+            app:destination="@id/dataFragment" />
+        <action
+            android:id="@+id/action_categoriesFragment_to_itemFragment"
+            app:destination="@id/itemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.e_commerce_demo.fragments.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_cartFragment_to_dataFragment"
+            app:destination="@id/dataFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="com.example.e_commerce_demo.fragments.ItemFragment"
+        android:label="fragment_item"
+        tools:layout="@layout/fragment_item">
+        <action
+            android:id="@+id/action_itemFragment_to_dataFragment"
+            app:destination="@id/dataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.e_commerce_demo.fragments.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.e_commerce_demo.fragments.LoginFragment"
+        android:label="fragment_login"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_dataFragment"
+            app:destination="@id/dataFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgetPasswordFragment"
+            app:destination="@id/forgetPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.e_commerce_demo.models.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="com.example.e_commerce_demo.fragments.ForgetPasswordFragment"
+        android:label="fragment_forget_password"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
+        tools:layout="@layout/fragment_forget_password">
+        <action
+            android:id="@+id/action_forgetPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.e_commerce_demo.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_dataFragment"
+            app:destination="@id/dataFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_profile_to_start"
+            app:destination="@+id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.e_commerce_demo.fragments.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite">
+        <action
+            android:id="@+id/action_favoriteFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+</navigation>

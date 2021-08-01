@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">e-commerce-demo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_splash_fragment">Hello splash fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_bottom_nav">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="profile">profile</string>
+    <string name="categories">categories</string>
+    <string name="cart">cart</string>
+    <string name="home">home</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_bottom_test">MainActivity</string>
+    <string name="title_activity_item">ItemActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="search">Search</string>
+    <string name="please_wait">Please Wait&#8230;</string>
+    <string name="reset_email_sent">Email sent successfully with reset password instruction</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="return_to_sign_in">return to sign in</string>
+
+
+</resources>

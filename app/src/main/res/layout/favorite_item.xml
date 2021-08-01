@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_background5"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/fav_title"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:singleLine="false"
+            android:text="Product Name"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fav_image" />
+
+        <TextView
+            android:id="@+id/fav_category"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:text="Category"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fav_title" />
+
+        <ImageView
+            android:id="@+id/fav_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fav_delete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/ic_bin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fav_title"
+            app:layout_constraintTop_toBottomOf="@+id/fav_image" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
